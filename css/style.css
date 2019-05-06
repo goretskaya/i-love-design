@@ -1,8 +1,12 @@
-body{
-
+/* Typography */
+@font-face{
+	font-family: 'Segoe UI';
+	src: url('fonts/SegoeUIRegular.woff') format('woff2'),
+	src: url('fonts/SegoeUIBold.woff');
+	font-weight: normal;
+    font-style: normal;	
 }
 
-/* Typography */
 a,
 input[type="submit"],
 input[type="button"],
@@ -50,8 +54,103 @@ textarea {
 
 }
 
-/* Layout */
-.ba-container{
-	padding-left: 20px;
-	padding-right: 20px;
+html{
+	font-family:'Segoe UI',sans-serif;
+	text-align: center;
 }
+h1{
+	font-style: bold;
+	text-transform: uppercase;
+	color: #464b4f;
+	font-size: 80px;
+	margin-bottom: 60px;
+}
+
+p{
+	font-size: 18px;
+	color: #464b4f;
+}
+
+
+
+
+/* Layout */
+
+
+header{
+	background-color: #23232E;
+	color: #FFF;
+	padding: 80px 0 50px 0;
+}
+
+header h1, header p{
+	color: #FFF;
+}
+
+header p{
+	max-width: 80%;
+	margin: 0% 30%;		
+}
+
+
+.header-title{
+	max-width: 940px;
+	margin: 182px auto;
+	align-content: center;
+}
+
+.content{
+	max-width: 940px;
+	margin: 0 auto;
+	padding: 125px 0;
+}
+
+.main_description p{
+	font-size: 30px;
+	margin: 0 43px;
+}
+
+h1:nth-child(2) {
+  margin: 114px 0 92px;
+}
+
+.main_summary{
+	display: flex;
+	text-align: left;
+}
+
+h5{
+	text-transform: uppercase;
+	margin: 0;
+	font-size: 18px;
+	color: #464B4F;
+}
+
+.main_summary p{
+	color: #888A8B;
+	line-height: 30px;
+}
+
+.main_text:nth-child(2) {
+  margin: 0 20px;
+}
+
+main{
+	background-image: url(../img/bg.svg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0;
+}
+
+/*.main_bg{
+	height: 125px;
+}*/
+
+
+
+
+
+
+
+
